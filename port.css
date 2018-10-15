@@ -1,18 +1,19 @@
 body 
-ul {
+body {margin: 0;}
+
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(40, 48, 156);
 }
 
-li {
-    float: right;
-    border-left:3px solid rgb(216, 32, 176);
-}
+ul.topnav li {float:right  ;
+    border-left:2px solid #bbb;}
 
-li a {
+
+ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
@@ -21,10 +22,25 @@ li a {
     font-family: Lucida Console;
 }
 
-li a:hover:not(.active) {
-    background-color: rgb(31, 179, 190);
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: rgb(194, 43, 199);}
+
+ul.topnav li.left {float: left;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+h1 {
+    color: black;
+    text-align: left;
+    font-family: Georgia;
+    font-size: 25px;
+}
+p,li{
+    font-size: 18px;
+    font-family: courier New;
+    color: rgb(0, 0, 0);
 }
 
-.active {
-    background-color: rgb(170, 17, 132);
-}
