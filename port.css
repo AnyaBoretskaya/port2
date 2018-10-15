@@ -1,4 +1,4 @@
-body 
+body
 body {margin: 0;}
 
 ul.topnav {
@@ -6,27 +6,26 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(40, 48, 156);
+    background-color: rgb(7, 7, 7);
 }
 
 ul.topnav li {float:right  ;
     border-left:2px solid #bbb;}
-
-
+   
 ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Lucida Console;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: rgb(14, 54, 187);}
 
-ul.topnav li a.active {background-color: rgb(224, 21, 140);}
+ul.topnav li a.active {background-color: rgb(207, 23, 198);}
 
 ul.topnav li.left {float: left;}
+
 
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
@@ -43,42 +42,4 @@ p,li{
     font-size: 18px;
     font-family: courier New;
     color: rgb(0, 0, 0);
-}
-.container {
-    position: relative;
-    width: 50%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: rgb(194, 50, 151);
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
 }
