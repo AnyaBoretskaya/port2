@@ -1,21 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
+<title>Snake</title>
 <link rel="stylesheet" href="port.css">
-<style>
-
-</style>
+<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Calligraffitti|Fascinate+Inline|Monoton|Press+Start+2P" rel="stylesheet">
+<link rel="shortcut icon" href="img/1616.png" type="image/x-icon">
 </head>
-<body>
-
-        <ul class="topnav">
-  <li><a href="avtor.html">Автор</a></li>
-  <li><a href="rules.html">Правила</a></li>
-  <li><a href="menu.html">Меню</a></li>
- <li class="left"><a class="active" href="port.html">SNAKE</a></li>
-</ul>
+ <body>
+    <header class="navbar responsive" id="mynavbar"> 
+        <ul>
+            <li>
+                <a href="#" class="icon" id="menu">&#9776;</a>
+                <a href="#snake">SNAKE</a>
+            </li>
+            <li class="menu, right">
+                    <nav>                
+                        <a href="#" class="icon" id="menu">&#9776;</a>
+                        <a href="#menu" class="menubtn">MENU</a>
+                        <a class="menu_content" href="#gallery">GALLERY</a>
+                        <a class="menu_content" href="#rules">RULES</a>
+                        <a href="https://www.google.com/" target="_blank">PLAY</a>
+                        <a class="menu_content" href="#about">ABOUT</a>
+                        <a class="menu_content" href="#contact">CONTACT</a>
+                      
+                    </nav>
+                </li>
+            </ul>
+        </header>
 <img src="img/unnamed.png" style="width:100%;">
+
+
+<main>
+        
+                    <a name="gallery"></a>
+                <h1>PHOTO  GALLERY</h1> 
+                    <div class="container">    
+
+
+            <!-- Photo grid -->
+  
+      <div class="w3-quarter">
+        <img src="img/1.jpg" style="width:33%" >
+        <img src="img/2.jpg" style="width:33%" >
+        <img src="img/3.jpg" style="width:33%" >
+     </div>
+      
+     <div class="w3-quarter">
+        <img src="img/4.jpg" style="width:33%" >
+        <img src="img/5.jpg" style="width:33%" >
+        <img src="img/6.jpg" style="width:33%" >
+      </div>
+      
+      <div class="w3-quarter">
+        <img src="img/7.jpg" style="width:33%" >
+        <img src="img/8.jpg" style="width:33%" >
+        <img src="img/9.jpg" style="width:33%" >
+      </div>
+
+   <!-- RULES -->
+
+   <a name="rules"></a> 
+
+        <header>
+          <h2> RULES </h2>
+            </header>
+         <h3>Target: </h3>
+        <p>The Goal of the game is to crawl across the playing field to collect as many cubes as possible.</p>
+        <header>
+            <h3>Rules of the game: </h3>
+              </header>
+              
+                  <p>The direction of travel can be changed using the cursor keys.    If
+                        more than one key was pressed between two consecutive movements
+                        the cursor moves, then they are processed in the order in which they were clicked;
+                        At any time, you can start the game again by pressing Enter, pause the current
+                        play by pressing the Pause button or resume it by pressing the Space bar button; 
+                        When the game is paused, the text "PAUSED" is displayed»; 
+                        In case of defeat, the text "Game over" is displayed»; 
+                        In case of victory, the text " Congratulations!". </p>
+                </ul>
+                <header>
+                    <h3>Tips: </h3>
+                      </header>
+                  <p>try to deftly control the snake so as not to crash into the wall and into your own tail.</p>
+                  <header>
+      </article>
+
+<!-- ABOUT -->
+
+      <a name="about"></a>   
+      <h1>ABOUT</h1> 
+      <div class="about">
+            <div class="me">                                                                                       
+                <img  src="img/10.jpg" width="400" height="400">                                        
+            </div> 
+        
+        <h4>Hi! My name is Anneta.I'm glad to see you here. I am the Creator of this site, a designer and just a creative person. </h4>
+    </div> 
+
+    
+<!-- CONTACT -->
+
+</main>
+<a name="contact"></a>
+<footer>
+    <div class="wrapper">                
+        <div class="social">                   
+            <a href="https://github.com/AnyaBoretskaya" target="_blank"><img src="img/octocat_github.gif" width="60" height="60" alt="git"></a>
+            <a href="https://t.me/AnnetaBoretta" target="_blank"><img src="img/telegram.gif" width="60" height="60" alt="telegram"></a>
+            <a href="https://www.instagram.com/anya_boretskaya/" target="_blank"><img src="img/instagram anim.gif" width="60" height="60"  alt="insta"></a>
+            <a href="https://vk.com/pro100_anya" target="_blank"><img src="img/15d07647269649.588906ec0e34a.gif" width="60" height="60"  alt="vk"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script>
+    
+    
+menu.onclick=function Navbar(){
+    var x=document.getElementById('mynavbar')
+    if(x.className==='navbar'){
+        x.className+=' responsive';
+    }else
+    {
+        x.className='navbar';
+    }
+}
+
+    
+    </script>
 </body>
 </html>
