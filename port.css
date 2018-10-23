@@ -12,9 +12,6 @@ h1{
     color: white;
 }
 
-
-
-
 /*navbar*/
 
 ul {
@@ -55,6 +52,7 @@ li.menu {
     display: none;
 }
 
+
 @media screen and (max-width: 600px){
 
     /*navbar*/
@@ -79,14 +77,36 @@ li.menu {
        display: block;
        
    }
+
+
+   .all_photo{                    
+    flex-direction: column;
+    margin: auto;
 }
+.all_photo .photo img{
+    width: 100%;
+}
+
+.about{
+    flex-direction: column;
+    margin: auto;
+}
+
+.all_rules {                    
+    flex-direction: column;
+    margin: auto;
+}
+
+}
+
+
 
 /*RULES*/
 h2{
     font-family: 'Press Start 2P', cursive;
     font-size: 50px;
     text-align: center;
-    color: white;
+    color: white; 
 }
 h3{
     font-family: 'Fascinate Inline', cursive;
